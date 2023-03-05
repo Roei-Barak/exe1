@@ -14,6 +14,9 @@ public abstract class Animal implements Seasonable,Comparable{
     public Season getCurrentSeason() {
         return season;
     }
+    public void changeSeason(){                                        //11111
+        season.next();
+    }
 
     @Override
     public int compareTo(Object o) {
