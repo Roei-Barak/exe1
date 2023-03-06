@@ -5,6 +5,7 @@ public abstract class Tree implements Comparable, Seasonable {
 
     protected int height;
     protected Season season;
+    protected String explement;
     protected Color leavesColor;
     // TODO: Add auxiliary fields and functions.
 

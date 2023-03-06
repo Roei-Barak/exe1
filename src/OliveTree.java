@@ -8,11 +8,23 @@ public class OliveTree extends Tree {
 
     @Override
     public String toString() {
-        // TODO: Implement.
-        return null;
+        return "OliveTree{" +explement+ "My height is:" + getHeight()+ "and my color is:" +leavesColor;
     }
     @Override
-    public void changeSeason() {
-        // TODO: Implement.
+    public void changeSeason() {         //111111111
+            super.changeSeason();
+            if (season == Season.WINTER){
+                height+=5;
+            }
+            else if (season == Season.SPRING){
+                height+=10;
+            }
+            else if (season == Season.SUMMER){
+                height+=10;
+            }
+            else if (season == Season.FALL){
+                height+=5;
+                explement = "An olive tree bears fruit";
+            }
+        }
     }
-}

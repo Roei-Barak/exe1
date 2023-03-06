@@ -1,6 +1,5 @@
 public class FigTree extends Tree {
 
-    String explement;
     FigTree(int height, Season season) {
         // TODO: Implement.
         super(height,season,Color.GRAY);
@@ -8,8 +7,7 @@ public class FigTree extends Tree {
 
     @Override
     public String toString() {
-        // TODO: Implement.
-        return null;
+        return "Fig tree." +explement+ "My height is:" + getHeight()+ "and my color is:" +leavesColor;
     }
     @Override
     public void changeSeason() {                        //111111111
