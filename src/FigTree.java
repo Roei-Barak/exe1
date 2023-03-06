@@ -3,7 +3,7 @@ public class FigTree extends Tree {
     String explement;
     FigTree(int height, Season season) {
         // TODO: Implement.
-        super(0,null,null);
+        super(height,season,Color.GRAY);
     }
 
     @Override

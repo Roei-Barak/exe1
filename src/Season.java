@@ -1,6 +1,7 @@
 public enum Season {
     WINTER, SPRING, SUMMER, FALL;
     // TODO: Add auxiliary functions.
+
     static public final Season[] values = values();
 
     public Season prev() {                                              //1111111
