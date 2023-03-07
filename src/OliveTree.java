@@ -3,7 +3,7 @@ public class OliveTree extends Tree {
 
     OliveTree(int height, Season season) {
         // TODO: Implement.
-        super(0,null,null);
+        super(height,season,null);
     }
 
     @Override

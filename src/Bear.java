@@ -35,4 +35,5 @@ public class Bear extends Animal {
         color = Color.BROWN;
 
     }
+
 }

@@ -1,4 +1,4 @@
-public abstract class Animal implements Seasonable,Comparable{
+public abstract class Animal implements Seasonable,Comparable<Animal>{
     protected int weight;
     private Season season;
     protected Color color;
@@ -19,8 +19,7 @@ public abstract class Animal implements Seasonable,Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {
-        // TODO: Implement.
-        return 0;
+    public int compareTo(Animal other) {
+        return Integer.compare(this.weight, other.weight);
     }
 }
