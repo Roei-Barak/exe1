@@ -1,4 +1,4 @@
-public abstract class Tree implements Comparable, Seasonable {
+public abstract class Tree implements Comparable<Tree>, Seasonable {
     public int getHeight() {
         return height;
     }
@@ -24,13 +24,8 @@ public abstract class Tree implements Comparable, Seasonable {
     }
 
     @Override
-    public int compareTo(Object o) {                                    //111111111
-        Tree hei= (Tree) o;
-        if (this.getHeight()> hei.getHeight())
-            return 1;
-        if (this.getHeight()< hei.getHeight())
-            return -1;
-        return 0;
+    public int compareTo(Tree tree) {                                    //111111111
+        return Integer.compare(this.height, tree.height);
     }
 
     @Override
