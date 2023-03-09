@@ -8,7 +8,7 @@ public class FigTree extends Tree {
 
     @Override
     public String toString() {
-        if (explement == "I have no Leaves")
+        if (explement == "I have no leaves")
             return "Fig tree. My height is: " + this.height + " and " + explement;
 
         return "Fig tree." + explement + " My height is: " + this.height + " and my color is: " + leavesColor;
@@ -19,14 +19,14 @@ public class FigTree extends Tree {
         super.changeSeason();
         if (season == Season.WINTER) {
             height += 20;
-            explement = "I have no Leaves";
+            explement = "I have no leaves";
         } else if (season == Season.SPRING) {
             height += 30;
             leavesColor = Color.GREEN;
             explement = "";
         } else if (season == Season.SUMMER) {
             height += 30;
-            explement = "A fig tree bears fruit";
+            explement = " I give fruit.";
         } else if (season == Season.FALL) {
             height += 20;
             leavesColor = Color.YELLOW;

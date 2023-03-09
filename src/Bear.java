@@ -8,8 +8,8 @@ public class Bear extends Animal {
     @Override
     public String toString() {
         if (this.getCurrentSeason() == Season.WINTER)
-            return "Bear." +
-                    "I am sleeping."+
+            return "Bear. " +
+                    "I am sleeping. "+
                     "My weight is: " + weight +
                     " and my color is: " + color;
         return "Bear. " +
@@ -31,13 +31,14 @@ public class Bear extends Animal {
         Season current = getCurrentSeason();
 
         if (current == Season.WINTER)
-            this.weight = Math.round((int) (weight - 0.2 * weight));
+            this.weight = (int) Math.round((weight - 0.2 * weight));
         else if (current == Season.SPRING)
-            weight = Math.round((int) (weight - 0.25 * weight));
-        else if (current == Season.SUMMER)
-            weight = Math.round((int) ((float) (weight / 3) + weight));
+            weight = (int) Math.round((weight - 0.25 * weight));
+        else if (current == Season.SUMMER){
+            float w = (float)weight/3;
+            weight = Math.round( (w + weight));}
         else if (current == Season.FALL)
-            weight = Math.round((int) (weight + 0.25 * weight));
+            weight =(int) Math.round( (weight + 0.25 * weight));
         color = Color.BROWN;
 
     }
