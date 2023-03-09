@@ -27,10 +27,11 @@ public class Bear extends Animal {
     @Override
     public void changeSeason() {
         // TODO: Implement.
-        Season current = getCurrentSeason();
         super.changeSeason();
+        Season current = getCurrentSeason();
+
         if (current == Season.WINTER)
-            weight = Math.round((int) (weight - 0.2 * weight));
+            this.weight = Math.round((int) (weight - 0.2 * weight));
         else if (current == Season.SPRING)
             weight = Math.round((int) (weight - 0.25 * weight));
         else if (current == Season.SUMMER)

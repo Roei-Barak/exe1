@@ -11,7 +11,7 @@ public class Caribou extends Animal {
     public String toString() {
         // TODO: Implement.
         if (getCurrentSeason() == Season.WINTER)
-            return "Caribou: I am migrating south." +
+            return "Caribou: I am migrating south. " +
                     "My weight is: "+ weight +
                     " and my color is: " + color;
         if (getCurrentSeason() == Season.SUMMER)
@@ -27,5 +27,9 @@ public class Caribou extends Animal {
     public void changeSeason() {
         // TODO: Implement.
         super.changeSeason();
+        if (getCurrentSeason() == Season.WINTER)
+            this.color = Color.WHITE;
+        else if (getCurrentSeason() == Season.SPRING)
+            this.color = Color.BROWN;
     }
 }
