@@ -7,6 +7,11 @@ public class Bear extends Animal {
 
     @Override
     public String toString() {
+        if (this.getCurrentSeason() == Season.WINTER)
+            return "Bear." +
+                    "I am sleeping."+
+                    "My weight is: " + weight +
+                    " and my color is: " + color;
         return "Bear. " +
                 "My weight is: " + weight +
                 " and my color is: " + color;

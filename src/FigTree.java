@@ -2,12 +2,13 @@ public class FigTree extends Tree {
 
     FigTree(int height, Season season) {
         // TODO: Implement.
-        super(height,season,Color.GRAY);
+        super(height,season,Color.YELLOW);
+        this.explement = "";
     }
 
     @Override
     public String toString() {
-        return "Fig tree." +explement+ "My height is:" + getHeight()+ "and my color is:" +leavesColor;
+        return "Fig tree." +explement+ " My height is: " + this.height + " and my color is: " +leavesColor;
     }
     @Override
     public void changeSeason() {                        //111111111

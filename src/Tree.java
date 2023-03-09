@@ -15,8 +15,8 @@ public abstract class Tree implements Comparable<Tree>, Seasonable {
         this.leavesColor = leavesColor;
     }
 
-    public void changeSeason(){                                        //11111
-        season.next();
+    public void changeSeason(){
+        this.season = season.next();
     }
     @Override
     public Season getCurrentSeason() {
